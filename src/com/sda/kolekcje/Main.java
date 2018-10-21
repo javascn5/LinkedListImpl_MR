@@ -15,5 +15,18 @@ public class Main {
         for(String l: list){
             System.out.println(l);
         }
+
+        CustomList<String> customList = new CustomLinkedList<>();
+        customList.addTail("Jeden");
+        customList.addTail("Dwa");
+        customList.addTail("Trzy");
+        customList.addTail("Cztery");
+        customList.addTail("Piec");
+
+        customList.printList();
+
+        customList.find(3);
+
+        customList.printList();
     }
 }
